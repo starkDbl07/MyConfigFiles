@@ -1,0 +1,9 @@
+#!/bin/bash
+
+tmux has-session -t  default
+if [ $? -ne 0 ]
+then
+	tmux new-session -s default -d
+	tmux split-window -h -p 60 -t default
+	tmux split-window -v -t default
+fi
