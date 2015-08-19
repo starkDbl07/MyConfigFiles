@@ -29,9 +29,11 @@ ZSH_THEME="wezm-my"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -55,7 +57,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/opt/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin"
+export PATH="/opt/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/Library/Frameworks/Python.framework/Versions/Current/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -89,4 +91,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Environment Variables
 export PYTHONSTARTUP=~/.pythonrc
+export EDITOR=vim
 
+# Aliases
+alias gitdir="/Volumes/Data/CLOUD/GitHub"
+alias bitdir="/Volumes/Data/CLOUD/BitBucket"
+
+# Vi binding
+bindkey -v
